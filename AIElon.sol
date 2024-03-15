@@ -17,7 +17,7 @@ contract AIElonApp is ERC20, ERC20Burnable, Ownable, ERC20Permit {
     uint256 public constant INITIAL_SUPPLY = 500000000 * 10 ** 18; // 500,000,000 tokens
     uint256 private constant BUYER_FEE = 50; // 5%
     uint256 private constant SELLER_FEE = 50; // 5%
-    string public constant tokenMetadata = "ipfs://bafybeib6owxj6pzqtkqf45ubbzw63zbfgliics3gm7utjjhis7iktii2fq";
+    string public constant tokenMetadata = "ipfs://bafybeig53vfh6x2z2ehwzb45oijxoct5hwd46wimd4p7rbm5rj446g5wj4";
 
     constructor(address initialOwner) ERC20("AI Elon", "AIELON") Ownable(initialOwner) ERC20Permit("AI Elon") {
         _mint(msg.sender, INITIAL_SUPPLY);
